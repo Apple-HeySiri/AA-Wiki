@@ -6,16 +6,19 @@
     <title>ああWiki</title>
     <style>
         body {
-            align-items: center;
             display: flex;
-            height: 100vh;
             justify-content: center;
+            align-items: center;
+            height: 100vh;
             margin: 0;
         }
 
         .box {
             border: 1px solid #444444;
+            max-width: 600px;
             padding: 10px;
+            text-align: center;
+            width: 100%;
         }
 
         @media screen and (max-width: 767px) {
@@ -26,14 +29,14 @@
         
         @media screen and (min-width: 767px) {
             .box {
-                width: calc(100% - 10px);
+                width: 80%;
             }
         }
     </style>
 </head>
 <body>
     <div class="box">
-       ああWiki 
+        ああWiki
     </div>
 </body>
 </html>

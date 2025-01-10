@@ -8,7 +8,7 @@ const body = document.body;
 
 async function searchWikipeida(query) {
   const encodedQuery = encodeURIComponent(query);
-  const endpoint = `https://en.wikipedia.org/w/api.php?action=query&list=search&prop=info&inprop=url&utf8=&format=json&origin=*&srlimit=10&srsearch=${encodedQuery}`;
+  const endpoint = `https://ja.wikipedia.org/w/api.php?action=query&list=search&prop=info&inprop=url&utf8=&format=json&origin=*&srlimit=10&srsearch=${encodedQuery}`;
 
   const reponse = await fetch(endpoint);
 

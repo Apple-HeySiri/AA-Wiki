@@ -9,6 +9,7 @@ h1 {
   font-weight: 300;
   letter-spacing: 2px;
   font-size: 48px;
+  color: black;
 }
 
 p {
@@ -22,12 +23,12 @@ p {
   position: relative;
   text-align: center;
   background: linear-gradient(60deg, rgba(84, 58, 183, 1) 0%, rgba(0, 172, 193, 1) 100%);
-  color: white;
+  color: black;
 }
 
 .logo {
   width: 50px;
-  fill: white;
+  fill: red;
   padding-right: 15px;
   display: inline-block;
   vertical-align: middle;

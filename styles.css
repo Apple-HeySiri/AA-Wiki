@@ -132,6 +132,7 @@ p {
 .slider-item {
     flex: none;
     width: 150px;
+    height: auto;
     text-align: center;
     scroll-snap-align: center;
 }

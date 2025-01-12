@@ -120,6 +120,8 @@ p {
 .slider-container {
     margin: 20px;
     padding: 20px 0;
+    display: flex;
+    justify-content: center;
 }
 
 .slider {
@@ -127,6 +129,8 @@ p {
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     gap: 20px;
+    width: 80%;
+    justify-content: center;
 }
 
 .slider-item {

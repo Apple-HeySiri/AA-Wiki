@@ -39,6 +39,9 @@ p {
     padding-right: 15px;
     display: inline-block;
     vertical-align: middle;
+    position: absolute;
+    left: 10px;
+    top: 10px;
 }
 
 .inner-header {

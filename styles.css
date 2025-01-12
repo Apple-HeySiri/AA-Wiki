@@ -127,6 +127,7 @@ p {
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     gap: 20px;
+    width: 30%;
 }
 
 .slider-item {

@@ -163,7 +163,7 @@ p {
 
 .content h1 {
     position: relative;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
     font-size: 30px;
 }
 
@@ -173,7 +173,7 @@ p {
     left: 50%;
     bottom: 0;
     transform: translateX(-50%);
-    width: 80%;
+    width: 80vw;
     height: 3px;
     background-color: #333333;
 }
@@ -188,6 +188,6 @@ p {
         font-size: 24px;
     }
     .content h1::after {
-        width: 90%;
+        width: 80vw;
     }
 }

@@ -135,6 +135,7 @@ p {
     height: auto;
     text-align: center;
     scroll-snap-align: center;
+    boader: 3px double #333333;
 }
 
 .slider-image {

@@ -174,7 +174,7 @@ p {
     bottom: 0;
     transform: translateX(-50%);
     width: 80vw;
-    height: 3px;
+    height: 1px;
     background-color: #333333;
 }
 

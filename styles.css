@@ -135,8 +135,6 @@ p {
     height: auto;
     text-align: center;
     scroll-snap-align: center;
-    border: 10px double #333333;
-    padding: 20px;
 }
 
 .slider-image {

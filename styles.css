@@ -1,9 +1,9 @@
-@import url(//fonts.googleapis.com/css?family=Lato:300:400);
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
 body {
   margin:0;
 }
 h1 {
-  font-family: 'Lato', sans-serif;
+  font-family: "Black Ops One", serif;
   font-weight:300;
   letter-spacing: 2px;
   font-size:48px;

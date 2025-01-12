@@ -4,6 +4,114 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>AA Wiki</title>
         <link rel="stylesheet" href="styles.css" />
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
+
+            body {
+                margin: 0;
+                background-color: #121212;
+                color: #ffffff;
+            }
+
+            h1 {
+                font-family: "Black Ops One", serif;
+                font-weight: 300;
+                letter-spacing: 2px;
+                font-size: 48px;
+                color: #ffffff;
+            }
+
+            p {
+                font-family: 'Lato', sans-serif;
+                letter-spacing: 1px;
+                font-size: 14px;
+                color: #b0b0b0;
+            }
+
+            .header {
+                position: relative;
+                text-align: center;
+                background: linear-gradient(60deg, #000000 0%, #2a2a2a 100%);
+                color: white;
+            }
+
+            .logo {
+                width: 60px;
+                fill: white;
+                padding-right: 15px;
+                display: inline-block;
+                vertical-align: middle;
+            }
+
+            .inner-header {
+                height: 65vh;
+                width: 100%;
+                margin: 0;
+                padding: 0;
+            }
+
+            .flex {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+            }
+
+            .waves {
+                position: relative;
+                width: 100%;
+                height: 15vh;
+                margin-bottom: -7px; /*Fix for safari gap*/
+                min-height: 100px;
+                max-height: 150px;
+            }
+
+            .waves > use {
+                fill: rgba(20, 20, 20, 0.9);
+            }
+
+            .parallax > use:nth-child(1) {
+                animation-delay: -2s;
+                animation-duration: 7s;
+            }
+
+            .parallax > use:nth-child(2) {
+                animation-delay: -3s;
+                animation-duration: 10s;
+            }
+
+            .parallax > use:nth-child(3) {
+                animation-delay: -4s;
+                animation-duration: 13s;
+            }
+
+            .parallax > use:nth-child(4) {
+                animation-delay: -5s;
+                animation-duration: 20s;
+            }
+
+            @keyframes move-forever {
+                0% {
+                    transform: translate3d(-90px, 0, 0);
+                }
+                100% {
+                    transform: translate3d(85px, 0, 0);
+                }
+            }
+
+            @media (max-width: 768px) {
+                .waves {
+                    height: 40px;
+                    min-height: 40px;
+                }
+                .content {
+                    height: 30vh;
+                }
+                h1 {
+                    font-size: 24px;
+                }
+            }
+        </style>
     </head>
     <body>
         <div class="header">
@@ -11,8 +119,8 @@
                 <svg class="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                     <g>
                         <g>
-                            <path fill="#FFFFFF" d="M256,73.8247a182.18,182.18,0,0,0-182.18,182.18c0,100.6173,81.567,182.1708,182.18,182.1708a182.1753,182.1753,0,1,0,0-364.3506Z"/>
-                            <path fill="red" d="M237.9037,160.0456a18.0986,18.0986,0,0,1,36.1971,0V214.02a18.0986,18.0986,0,0,1-36.1971,0ZM256,348.5884a92.4129,92.4129,0,0,1-32.9634-178.7517v33.381a62.4533,62.4533,0,1,0,65.9313,0v-33.381A92.4149,92.4149,0,0,1,256,348.5884Z"/>
+                            <path fill="#ffffff" d="M256,73.8247a182.18,182.18,0,0,0-182.18,182.18c0,100.6173,81.567,182.1708,182.18,182.1708a182.1753,182.1753,0,1,0,0-364.3506Z"/>
+                            <path fill="#ff4d4d" d="M237.9037,160.0456a18.0986,18.0986,0,0,1,36.1971,0V214.02a18.0986,18.0986,0,0,1-36.1971,0ZM256,348.5884a92.4129,92.4129,0,0,1-32.9634-178.7517v33.381a62.4533,62.4533,0,1,0,65.9313,0v-33.381A92.4149,92.4149,0,0,1,256,348.5884Z"/>
                         </g>
                     </g>
                 </svg>
@@ -24,10 +132,10 @@
                         <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
                     </defs>
                     <g class="parallax">
-                        <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(0, 0, 0, 0.7)" />
-                        <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(0, 0, 0, 0.5)" />
-                        <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(0, 0, 0, 0.3)" />
-                        <use xlink:href="#gentle-wave" x="48" y="7" fill="#000" />
+                        <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(20,20,20,0.9)" />
+                        <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(20,20,20,0.7)" />
+                        <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(20,20,20,0.5)" />
+                        <use xlink:href="#gentle-wave" x="48" y="7" fill="rgba(20,20,20,0.3)" />
                     </g>
                 </svg>
             </div>

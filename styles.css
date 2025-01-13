@@ -30,7 +30,7 @@ p {
     position: relative;
     text-align: center;
     background: linear-gradient(60deg, #6366F1, #3B82F6);
-    color: white;
+    color: white
 }
 
 .header h1 {
@@ -156,25 +156,4 @@ p {
 .content {
     margin: 20px 0;
     text-align: center;
-}
-
-.wave-text {
-    display: inline-block;
-    position: relative;
-    font-size: 100px;
-    font-family: "Black Ops One", sans-serif;
-    color: #1D4ED8;
-    animation: wave-animation 3s ease-in-out infinite;
-}
-
-@keyframes wave-animation {
-    0% {
-        clip-path: polygon(0% 50%, 10% 40%, 20% 50%, 30% 60%, 40% 50%, 50% 40%, 60% 50%, 70% 60%, 80% 50%, 90% 40%, 100% 50%);
-    }
-    50% {
-        clip-path: polygon(0% 60%, 10% 50%, 20% 60%, 30% 70%, 40% 60%, 50% 50%, 60% 60%, 70% 70%, 80% 60%, 90% 50%, 100% 60%);
-    }
-    100% {
-        clip-path: polygon(0% 50%, 10% 40%, 20% 50%, 30% 60%, 40% 50%, 50% 40%, 60% 50%, 70% 60%, 80% 50%, 90% 40%, 100% 50%);
-    }
 }

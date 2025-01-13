@@ -147,6 +147,12 @@ p {
     }
 }
 
+@media (max-width: 480px) {
+    .slider {
+        grid-template-columns: 1fr;
+    }
+}
+
 .slider-item {
     display: flex;
     justify-content: center;

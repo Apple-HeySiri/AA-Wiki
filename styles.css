@@ -4,20 +4,26 @@
 
 body {
     margin: 0;
-    font-family: "Bungee Outline", sans-serif;
+    font-family: "Lato", sans-serif;
+    background-color: #fafafa;
     color: #333333;
-    background-color: #ffffff;
 }
 
 h1 {
-    font-weight: 300;
+    font-weight: 500;
     letter-spacing: 2px;
-    font-size: 50px;
+    font-size: 48px;
+    color: #333;
 }
 
 a {
     text-decoration: none;
     color: #333333;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #FF6347;
 }
 
 p {
@@ -30,7 +36,8 @@ p {
     font-family: "Black Ops One", sans-serif;
     position: relative;
     text-align: center;
-    background: linear-gradient(60deg, rgba(239, 239, 239, 1) 0%, rgba(256, 256, 256, 1) 100%);
+    background: linear-gradient(45deg, #FF6347, #FF8C00);
+    padding: 20px 0;
 }
 
 .logo {
@@ -45,7 +52,7 @@ p {
 }
 
 .inner-header {
-    height: 65vh;
+    height: 50vh;
     width: 100%;
     margin: 0;
     padding: 0;
@@ -53,6 +60,7 @@ p {
 
 .inner-header h1 {
     font-size: 60px;
+    color: white;
 }
 
 .flex {
@@ -110,7 +118,7 @@ p {
         min-height: 40px;
     }
     .content {
-        height: 30vh;
+        height: auto;
     }
     h1 {
         font-size: 24px;
@@ -127,25 +135,38 @@ p {
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     gap: 20px;
+    padding: 10px 0;
 }
 
 .slider-item {
     flex: none;
-    width: 150px;
+    width: 180px;
     height: auto;
     text-align: center;
     scroll-snap-align: center;
+    transition: transform 0.3s ease;
+}
+
+.slider-item:hover {
+    transform: scale(1.05);
 }
 
 .slider-image {
     width: 100%;
-    height: 150px;
+    height: 180px;
     object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.slider-item:hover .slider-image {
+    transform: scale(1.1);
 }
 
 .slider-title {
     margin-top: 10px;
     font-size: 1.2rem;
+    font-weight: 600;
 }
 
 .slider::-webkit-scrollbar {
@@ -165,6 +186,7 @@ p {
     position: relative;
     padding-bottom: 10px;
     font-size: 30px;
+    font-weight: 600;
 }
 
 .content h1::after {
@@ -173,21 +195,12 @@ p {
     left: 50%;
     bottom: 0;
     transform: translateX(-50%);
-    width: 80vw;
-    height: 1px;
-    background-color: #333333;
+    width: 80%;
+    height: 2px;
+    background-color: #FF6347;
 }
 
 .content {
     margin: 20px 0;
     text-align: center;
-}
-
-@media (max-width: 768px) {
-    .content h1 {
-        font-size: 24px;
-    }
-    .content h1::after {
-        width: 80vw;
-    }
 }

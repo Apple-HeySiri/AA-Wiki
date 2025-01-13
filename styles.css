@@ -1,184 +1,102 @@
 @import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
-@function multiple-box-shadow($n) {
-  $value: '#{random(2000)}px #{random(2000)}px #FFF';
-  @for $i from 2 through $n {
-    $value: '#{$value}, #{random(2000)}px #{random(2000)}px #FFF';
-  }
-  @return unquote($value);
-}
-
-$shadows-small: multiple-box-shadow(700);
-$shadows-medium: multiple-box-shadow(200);
-$shadows-big: multiple-box-shadow(100);
-
-html {
-  height: 100%;
-  background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
-  overflow: hidden;
-}
-
 body {
-  margin: 0;
-  font-family: "Lato", sans-serif;
-  color: #333333;
-  background: #F3F4F6;
+    margin: 0;
+    font-family: "Lato", sans-serif;
+    color: #333333;
+    background: #F3F4F6;
 }
 
 h1 {
-  font-weight: 300;
-  letter-spacing: 2px;
-  font-size: 60px;
-  color: #1D4ED8;
+    font-weight: 300;
+    letter-spacing: 2px;
+    font-size: 60px;
+    color: #1D4ED8;
 }
 
 a {
-  text-decoration: none;
-  color: #333333;
+    text-decoration: none;
+    color: #333333;
 }
 
 p {
-  letter-spacing: 1px;
-  font-size: 16px;
-  color: #4B5563;
+    letter-spacing: 1px;
+    font-size: 16px;
+    color: #4B5563;
 }
 
 .header {
-  position: relative;
-  text-align: center;
-  color: white;
-  background: #000;
-  overflow: hidden;
+    position: relative;
+    text-align: center;
+    color: white;
+    overflow: hidden;
+    height: 65vh;
+    background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
 }
 
-.header h1 {
-  text-shadow: #333333 1px 0 10px;
-  font-family: "Black Ops One", sans-serif;
-}
-
-.logo {
-  width: 70px;
-  fill: white;
-  padding-right: 15px;
-  display: inline-block;
-  vertical-align: middle;
-  position: absolute;
-  left: 10px;
-  top: 10px;
-}
-
-.inner-header {
-  height: 65vh;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.inner-header h1 {
-  font-size: 80px;
-  color: white;
-}
-
-.inner-header h2 {
-  font-size: 30px;
-  color: white;
-  margin-top: 10px;
-}
-
-.flex {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-@keyframes move-stars {
-  0% {
-    transform: translateY(0);
-  }
-  100% {
-    transform: translateY(-100%);
-  }
-}
-
-.header::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: transparent;
-  box-shadow: $shadows-small;
-  animation: move-stars 100s linear infinite;
-  pointer-events: none;
+.header::before,
+.header::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    animation: animStar 50s linear infinite;
+    box-shadow: var(--shadows-small);
 }
 
 .header::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: transparent;
-  box-shadow: $shadows-medium;
-  animation: move-stars 150s linear infinite;
-  pointer-events: none;
+    animation-duration: 100s;
+    box-shadow: var(--shadows-medium);
 }
 
-.header .stars-big {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: transparent;
-  box-shadow: $shadows-big;
-  animation: move-stars 200s linear infinite;
-  pointer-events: none;
+.inner-header {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    position: relative;
+}
+
+.inner-header h1 {
+    font-size: 80px;
+    color: white;
+    font-family: "Black Ops One", sans-serif;
+}
+
+.inner-header h2 {
+    font-size: 30px;
+    color: white;
+    margin-top: 10px;
 }
 
 .content {
-  margin: 20px 0;
-  text-align: center;
+    margin: 20px 0;
+    text-align: center;
 }
 
-.content h1 {
-  position: relative;
-  padding-bottom: 10px;
-  font-size: 30px;
-  color: #1D4ED8;
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
-.content h1::after {
-  content: '';
-  position: absolute;
-  left: 50%;
-  bottom: 0;
-  transform: translateX(-50%);
-  width: 80vw;
-  height: 2px;
-  background-color: #1D4ED8;
+:root {
+    --shadows-small: 100px 100px #fff, 300px 300px #fff, 500px 500px #fff, 700px 700px #fff;
+    --shadows-medium: 50px 50px #fff, 150px 150px #fff, 250px 250px #fff, 450px 450px #fff;
 }
 
-@media (max-width: 768px) {
-  .waves {
-    height: 40px;
-  }
-  h1 {
-    font-size: 24px;
-  }
-  .content h1 {
-    font-size: 24px;
-  }
-  .content h1::after {
-    width: 80vw;
-  }
+@keyframes animStar {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-2000px);
+    }
 }

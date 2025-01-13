@@ -161,10 +161,6 @@ p {
     font-weight: 500;
 }
 
-.slider-item:hover .slider-image {
-    transform: scale(1.1);
-}
-
 .slider::-webkit-scrollbar {
     height: 8px;
 }

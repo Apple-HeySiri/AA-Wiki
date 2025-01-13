@@ -1,36 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
+@function multiple-box-shadow ($n) {
+  $value: '#{random(2000)}px #{random(2000)}px #FFF';
+  @for $i from 2 through $n {
+    $value: '#{$value} , #{random(2000)}px #{random(2000)}px #FFF';
+  }
+  @return unquote($value);
+}
+
+$shadows-small:  multiple-box-shadow(700);
+$shadows-medium: multiple-box-shadow(200);
+$shadows-big:    multiple-box-shadow(100);
+
 body {
     margin: 0;
     font-family: "Lato", sans-serif;
     color: #333333;
     background: #F3F4F6;
-}
-
-h1 {
-    font-weight: 300;
-    letter-spacing: 2px;
-    font-size: 60px;
-    color: #1D4ED8;
-}
-
-a {
-    text-decoration: none;
-    color: #333333;
-}
-
-p {
-    letter-spacing: 1px;
-    font-size: 16px;
-    color: #4B5563;
+    height: 100%;
 }
 
 .header {
     position: relative;
     text-align: center;
     background: linear-gradient(60deg, #6366F1, #3B82F6);
-    color: white
+    color: white;
+    height: 100vh;
 }
 
 .header h1 {
@@ -38,18 +34,7 @@ p {
     font-family: "Black Ops One", sans-serif;
 }
 
-.logo {
-    width: 70px;
-    fill: white;
-    padding-right: 15px;
-    display: inline-block;
-    vertical-align: middle;
-    position: absolute;
-    left: 10px;
-    top: 10px;
-}
-
-.inner-header {
+.header .inner-header {
     height: 65vh;
     width: 100%;
     margin: 0;
@@ -58,6 +43,58 @@ p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+#stars, #stars2, #stars3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+#stars {
+    width: 1px;
+    height: 1px;
+    background: transparent;
+    box-shadow: $shadows-small;
+    animation: animStar 50s linear infinite;
+}
+
+#stars2 {
+    width: 2px;
+    height: 2px;
+    background: transparent;
+    box-shadow: $shadows-medium;
+    animation: animStar 100s linear infinite;
+}
+
+#stars3 {
+    width: 3px;
+    height: 3px;
+    background: transparent;
+    box-shadow: $shadows-big;
+    animation: animStar 150s linear infinite;
+}
+
+#stars::after, #stars2::after, #stars3::after {
+    content: " ";
+    position: absolute;
+    top: 2000px;
+    width: 1px;
+    height: 1px;
+    background: transparent;
+    box-shadow: $shadows-small;
+}
+
+@keyframes animStar {
+    from {
+        transform: translateY(0px);
+    }
+    to {
+        transform: translateY(-2000px);
+    }
 }
 
 .inner-header h1 {

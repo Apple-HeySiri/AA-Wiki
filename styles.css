@@ -32,7 +32,7 @@ p {
     position: relative;
     text-align: center;
     background: linear-gradient(60deg, #6366F1, #3B82F6);
-    color: white
+    color: white;
 }
 
 .header h1 {
@@ -61,6 +61,13 @@ p {
 .inner-header h1 {
     font-size: 80px;
     color: white;
+    margin-bottom: 10px;
+}
+
+.inner-header h2 {
+    font-size: 1.5em;
+    color: #ffffff;
+    margin-top: 10px;
 }
 
 .flex {

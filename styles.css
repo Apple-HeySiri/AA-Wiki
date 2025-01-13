@@ -151,6 +151,10 @@ p {
     .slider {
         grid-template-columns: 1fr;
     }
+
+    .slider-box {
+        width: 90%;
+    }
 }
 
 .slider-item {
@@ -176,6 +180,7 @@ p {
     border-radius: 8px;
     background-color: white;
     padding: 10px;
+    width: 100%;
 }
 
 .slider-image {

@@ -152,7 +152,6 @@ p {
     height: 150px;
     object-fit: cover;
     border-radius: 8px;
-    transition: transform 0.3s ease;
 }
 
 .slider-title {

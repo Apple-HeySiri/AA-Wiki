@@ -16,6 +16,14 @@ h1 {
     color: #1D4ED8;
 }
 
+h2 {
+    font-weight: 300;
+    letter-spacing: 1px;
+    font-size: 24px;
+    color: #4B5563;
+    margin-top: 10px;
+}
+
 a {
     text-decoration: none;
     color: #333333;
@@ -61,13 +69,11 @@ p {
 .inner-header h1 {
     font-size: 80px;
     color: white;
-    margin-bottom: 10px;
 }
 
 .inner-header h2 {
-    font-size: 1.5em;
-    color: #ffffff;
-    margin-top: 10px;
+    font-size: 30px;
+    color: white;
 }
 
 .flex {

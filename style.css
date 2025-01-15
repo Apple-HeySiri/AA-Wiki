@@ -136,6 +136,8 @@ main {
 }
 
 .article {
+  display: flex;
+  align-items: center;
   padding: 10px;
   height: 100px;
   width: 90%;
@@ -147,12 +149,13 @@ main {
 .article .image {
   height: 30px;
   width: auto;
+  margin-right: 15px;
 }
 
 .article .title {
   font-size: 30px;
+  white-space: nowrap;
 }
-
 
 .article text {
   font-size: 15px;

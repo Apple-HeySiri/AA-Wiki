@@ -145,6 +145,7 @@ main {
   border-radius: 10px;
   margin: 0 auto;
   flex-direction: column;
+  text-align: left;
 }
 
 .article .image {
@@ -156,11 +157,12 @@ main {
 .article .title {
   font-size: 30px;
   white-space: nowrap;
+  margin-left: 0;
 }
 
 .article text {
   font-size: 15px;
-  text-align: center;
+  text-align: left;
   margin-top: 10px;
   width: 100%;
 }

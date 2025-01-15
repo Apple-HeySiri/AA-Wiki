@@ -137,9 +137,10 @@ main {
 
 .article {
   display: flex;
+  flex-direction: column;
   align-items: center;
   padding: 10px;
-  height: 100px;
+  height: 120px;
   width: 90%;
   border: 2px solid #333333;
   border-radius: 10px;
@@ -149,7 +150,7 @@ main {
 .article .image {
   height: 30px;
   width: auto;
-  margin-right: 15px;
+  margin-bottom: 10px;
 }
 
 .article .title {
@@ -160,6 +161,7 @@ main {
 .article text {
   font-size: 15px;
   text-align: center;
+  margin-top: 10px;
 }
 
 #menu-toggle:checked + .toggle .icon::before {

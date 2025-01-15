@@ -144,6 +144,7 @@ main {
   height: 150px;
   width: 48%;
   border: 2px solid #333333;
+  border-radius: 10px;
   margin: 10px;
   box-sizing: border-box;
 }

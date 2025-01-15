@@ -208,6 +208,14 @@ main {
   .heading {
     max-width: 80%;
     font-size: 30px;
-    padding: 70px;
+    padding: 30px;
+  }
+
+  .lead {
+    font-size: 20px;
+  }
+
+  text {
+    font-size: 10px;
   }
 }

@@ -144,7 +144,7 @@ main {
   border: 2px solid #333333;
   border-radius: 10px;
   margin: 0 auto;
-  flex-direction: column;
+  flex-direction: row;
   text-align: left;
 }
 
@@ -157,7 +157,6 @@ main {
 .article .title {
   font-size: 30px;
   white-space: nowrap;
-  margin-left: 0;
 }
 
 .article text {

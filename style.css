@@ -151,12 +151,12 @@ main {
 .article .image {
   height: 30px;
   width: auto;
-  margin-right: 15px;
+  margin-right: 10px;
 }
 
 .article .title {
   font-size: 30px;
-  white-space: nowrap;
+  margin-bottom: 10px;
 }
 
 .article text {

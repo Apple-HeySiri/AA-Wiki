@@ -152,19 +152,6 @@ main {
 .article .image {
   height: 30px;
   width: auto;
-  margin-bottom: 10px;
-}
-
-.article .title {
-  font-size: 30px;
-  margin-bottom: 10px;
-}
-
-.article text {
-  font-size: 20px;
-  text-align: left;
-  margin-top: 10px;
-  width: 100%;
 }
 
 .articles-container {

@@ -135,6 +135,27 @@ main {
   font-size: 30px;
 }
 
+.article {
+  padding: 10px;
+  height: 100px;
+  width: 90%;
+}
+
+.article .image {
+  height: 30px;
+  width: auto;
+  
+}
+
+.article .title {
+  font-size: 30px;
+}
+
+
+.article text {
+  font-size: 15px;
+}
+
 #menu-toggle:checked + .toggle .icon::before {
   margin-top: 0;
   transform: rotate(405deg);

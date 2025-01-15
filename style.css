@@ -154,6 +154,7 @@ main {
 
 .article text {
   font-size: 15px;
+  text-align: center;
 }
 
 #menu-toggle:checked + .toggle .icon::before {

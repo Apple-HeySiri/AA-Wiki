@@ -166,6 +166,7 @@ a {
   box-sizing: border-box;
   background: linear-gradient(to bottom, #444444, #111111);
   display: flex;
+  margin-bottom: 20px;
   margin: 0 auto;
 }
 

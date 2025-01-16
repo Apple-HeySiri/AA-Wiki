@@ -25,7 +25,7 @@ text {
 body {
   margin: 0;
   height: 100%;
-  background: #555555;
+  background: linear-gradient(to bottom, #555555, #333333);
   font-family: "Nanum Gothic Coding", sans-serif;
 }
 

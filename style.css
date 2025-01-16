@@ -47,8 +47,6 @@ main {
   margin: 0 auto;
   margin-bottom: 30px;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
 }
 
 .footer {
@@ -167,7 +165,7 @@ a {
   border-radius: 10px;
   margin: 10px;
   box-sizing: border-box;
-  background: linear-gradient(to bottom, #444444, #111111);
+  background: linear-gradient(to bottom, #444444, #111111)
 }
 
 .article .image {

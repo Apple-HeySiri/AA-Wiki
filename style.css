@@ -12,7 +12,7 @@ text {
 
 .font-logo {
   font-family: "Black Ops One", sans-serif;
-  text-shadow: #cccccc 1px 0 10px;
+  text-shadow: #8a837e 1px 0 10px;
 }
 
 .heading {
@@ -33,7 +33,7 @@ body {
   margin: 0;
   background: linear-gradient(to bottom, #222222, #000000);
   font-family: "Nanum Gothic Coding", sans-serif;
-  color: #cccccc;
+  color: #8a837e;
   background-size: cover;
 }
 
@@ -59,7 +59,7 @@ main {
   align-items: center;
   justify-content: space-between;
   background: linear-gradient(to left, #000000, #222222);
-  color: #cccccc;
+  color: #8a837e;
   height: 50px;
   padding: 1em;
   box-shadow: #555555 0px 8px 24px;
@@ -110,7 +110,7 @@ a {
 .icon::before,
 .icon::after {
   display: block;
-  background-color: #fff;
+  background-color: #8a837e;
   position: absolute;
   height: 4px;
   width: 30px;
@@ -131,7 +131,7 @@ a {
 .line {
   width: 100%;
   height: 2px;
-  background-color: #cccccc;
+  background-color: #8a837e;
   margin-bottom: 30px;
 }
 
@@ -224,7 +224,7 @@ a {
   #menu-toggle:checked ~ .menu li {
     height: 2.5em;
     padding: 0.5em;
-    border: 1px solid #cccccc;
+    border: 1px solid #8a837e;
   }
 
   .menu > li {

@@ -166,7 +166,7 @@ a {
   border-radius: 10px;
   margin: 10px;
   box-sizing: border-box;
-  background: linear-gradient(to bottom, #444444, #111111)
+  background: linear-gradient(to bottom, #444444, #111111);
   display: flex;
   margin-bottom: 20px;
 }

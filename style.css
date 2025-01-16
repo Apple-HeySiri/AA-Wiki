@@ -10,6 +10,10 @@ text {
   font-size: 20px;
 }
 
+text a {
+  color: #a2c8f2;
+}
+
 .font-logo {
   font-family: "Black Ops One", sans-serif;
   text-shadow: #8a837e 1px 0 10px;

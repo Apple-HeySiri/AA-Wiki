@@ -142,6 +142,10 @@ a {
   margin-bottom: 30px;
 }
 
+.title {
+  font-size: 35px;
+}
+
 .lead {
   font-size: 30px;
 }
@@ -248,6 +252,10 @@ a {
     padding: 30px;
   }
 
+  .title {
+    font-size: 30px;
+  }
+  
   .lead {
     font-size: 25px;
   }

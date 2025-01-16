@@ -223,11 +223,11 @@ a {
     padding: 0.5em 0;
     width: 100%;
     color: white;
-    background-color: #999999;
+    background-color: #111111;
   }
 
   .menu > li:not(:last-child) {
-    border-bottom: 1px solid #cccccc;
+    border-bottom: 1px solid #333333;
   }
 
   main {

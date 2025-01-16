@@ -56,6 +56,7 @@ main {
   color: #cccccc;
   height: 50px;
   padding: 1em;
+  box-shadow: #cccccc 0px 8px 24px;
 }
 
 .nav li {
@@ -124,7 +125,7 @@ main {
 .line {
   width: 100%;
   height: 2px;
-  background-color: #333333;
+  background-color: #cccccc;
   margin-bottom: 30px;
 }
 

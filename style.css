@@ -31,7 +31,6 @@ text {
 
 body {
   margin: 0;
-  height: 100%;
   background: linear-gradient(to bottom, #222222, #000000);
   font-family: "Nanum Gothic Coding", sans-serif;
   color: #cccccc;

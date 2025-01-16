@@ -167,6 +167,7 @@ a {
   height: 70px;
   width: auto;
   margin-bottom: 10px;
+  border-radius: 100%;
 }
 
 .article .title {

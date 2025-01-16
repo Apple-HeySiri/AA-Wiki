@@ -46,9 +46,8 @@ main {
   max-width: 50%;
   margin: 0 auto;
   margin-bottom: 30px;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
+  column-count: 2;
+  column-gap: 20px;
 }
 
 .footer {
@@ -169,6 +168,7 @@ a {
   box-sizing: border-box;
   background: linear-gradient(to bottom, #444444, #111111)
   display: flex;
+  margin-bottom: 20px;
 }
 
 .article .image {

@@ -46,8 +46,6 @@ main {
   max-width: 50%;
   margin: 0 auto;
   margin-bottom: 30px;
-  column-count: 2;
-  column-gap: 20px;
 }
 
 .footer {
@@ -160,15 +158,14 @@ a {
   align-items: center;
   justify-content: center;
   padding: 20px;
-  height: 160px;
-  width: 48%;
+  height: 200px;
+  width: 80%;
   border: 2px solid #333333;
   border-radius: 10px;
   margin: 10px;
   box-sizing: border-box;
   background: linear-gradient(to bottom, #444444, #111111);
   display: flex;
-  margin-bottom: 20px;
 }
 
 .article .image {

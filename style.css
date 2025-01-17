@@ -19,13 +19,6 @@ text a {
   text-shadow: #aaaaaa 1px 0 10px;
 }
 
-.logoeffect::before,
-.logoeffect::after {
-	border-radius: 50vh;
-	transform: translateX(var(--cover-x, -101%));
-	transition: transform 0.6s cubic-bezier(0.39, 0.575, 0.565, 1);
-}
-
 .heading {
   margin: 0 auto;
   max-width: 70%;
@@ -46,6 +39,7 @@ body {
   font-family: "Nanum Gothic Coding", sans-serif;
   color: #aaaaaa;
   background-size: cover;
+  height: 100%;
 }
 
 main {

@@ -288,6 +288,7 @@ a {
   box-shadow: 0 0 4px 2px rgba(#fff, 0.2);
   opacity: 0;
   animation: twinkle 5s infinite;
+  z-index: 1;
 }
 
 @keyframes twinkle {

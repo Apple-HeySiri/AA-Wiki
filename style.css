@@ -19,14 +19,11 @@ text a {
   text-shadow: #aaaaaa 1px 0 10px;
 }
 
-.logo-effect {
-  transition: color 0.3s ease;
-}
-
-.logo-effect:focus {
-  font-family: "Black Ops One", sans-serif;
-  text-shadow: #fffb8e 1px 0 10px;
-  color: #fffb8e;
+.logoeffect::before,
+.logoeffect::after {
+	border-radius: 50vh;
+	transform: translateX(var(--cover-x, -101%));
+	transition: transform 0.6s cubic-bezier(0.39, 0.575, 0.565, 1);
 }
 
 .heading {

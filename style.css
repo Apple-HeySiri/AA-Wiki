@@ -19,6 +19,10 @@ text a {
   text-shadow: #aaaaaa 1px 0 10px;
 }
 
+.logo-effect {
+  transition: color 0.3s ease;
+}
+
 .logo-effect:active {
   font-family: "Black Ops One", sans-serif;
   text-shadow: #fffb8e 1px 0 10px;

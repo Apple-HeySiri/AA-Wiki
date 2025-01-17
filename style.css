@@ -69,6 +69,7 @@ main {
   box-shadow: #555555 0px 8px 24px;
   z-index: 10;
   position: fixed;
+  width: 100%;
 }
 
 .nav li {

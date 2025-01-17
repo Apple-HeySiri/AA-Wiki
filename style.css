@@ -39,7 +39,7 @@ body {
   font-family: "Nanum Gothic Coding", sans-serif;
   color: #aaaaaa;
   background-size: cover;
-  max-height: 100%;
+  overflow: hidden;
 }
 
 main {

@@ -19,6 +19,12 @@ text a {
   text-shadow: #aaaaaa 1px 0 10px;
 }
 
+effect-logo:active {
+  font-family: "Black Ops One", sans-serif;
+  text-shadow: #fffb8e 1px 0 10px;
+  color: #fffb8e;
+}
+
 .heading {
   margin: 0 auto;
   max-width: 70%;

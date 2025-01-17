@@ -46,9 +46,6 @@ main {
   max-width: 50%;
   margin: 0 auto;
   margin-bottom: 30px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
 }
 
 .footer {

@@ -23,7 +23,7 @@ text a {
   transition: color 0.3s ease;
 }
 
-.logo-effect:active {
+.logo-effect:focus {
   font-family: "Black Ops One", sans-serif;
   text-shadow: #fffb8e 1px 0 10px;
   color: #fffb8e;

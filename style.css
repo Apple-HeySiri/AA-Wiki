@@ -269,4 +269,8 @@ a {
   text {
     font-size: 15px;
   }
+
+  .heading .image {
+    height: 100px;
+  }
 }

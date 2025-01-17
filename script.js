@@ -8,10 +8,10 @@ window.addEventListener("DOMContentLoaded", () => {
     const size = Math.random() * (maxSize - minSize) + minSize;
     starEl.style.width = `${size}px`;
     starEl.style.height = `${size}px`;
-    const screenWidth = window.innerWidth;
-    const screenHeight = window.innerHeight;
-    starEl.style.left = `${Math.random() * (screenWidth + 200) - 100}px`;
-    starEl.style.top = `${Math.random() * (screenHeight + 200) - 100}px`;
+    const xPosition = Math.random() * (window.innerWidth + 100) - 50;
+    const yPosition = Math.random() * (window.innerHeight + 100) - 50;
+    starEl.style.left = `${xPosition}px`;
+    starEl.style.top = `${yPosition}px`;
     starEl.style.animationDelay = `${Math.random() * 10}s`;
     stars.appendChild(starEl);
   };

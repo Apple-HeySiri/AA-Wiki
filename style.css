@@ -20,7 +20,7 @@ text a {
   font-size: 50px;
   text-align: center;
   padding: 100px;
-  z-index: 5;
+  z-index: 9;
 }
 
 .heading .image {
@@ -173,6 +173,7 @@ a {
   box-sizing: border-box;
   background: linear-gradient(to bottom, #444444, #111111);
   margin: 0 auto;
+  z-index: 9;
 }
 
 .article .image {
@@ -288,7 +289,6 @@ a {
   box-shadow: 0 0 4px 2px rgba(#fff, 0.2);
   opacity: 0;
   animation: twinkle 5s infinite;
-  z-index: 1;
 }
 
 @keyframes twinkle {

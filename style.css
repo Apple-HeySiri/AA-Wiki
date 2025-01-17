@@ -1,11 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&display=swap');
 
-h1 {
-  vertical-align: center;
-  text-align: center;
-}
-
 text {
   font-size: 20px;
 }
@@ -25,6 +20,7 @@ text a {
   font-size: 50px;
   text-align: center;
   padding: 100px;
+  z-index: 5;
 }
 
 .heading .image {
@@ -46,6 +42,7 @@ main {
   max-width: 50%;
   margin: 0 auto;
   margin-bottom: 30px;
+  z-index: 5;
 }
 
 .footer {

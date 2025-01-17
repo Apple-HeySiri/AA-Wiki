@@ -14,12 +14,12 @@ text a {
   color: #a2c8f2;
 }
 
-.font-logo {
+.logo-font {
   font-family: "Black Ops One", sans-serif;
   text-shadow: #aaaaaa 1px 0 10px;
 }
 
-effect-logo:active {
+.logo-effect:active {
   font-family: "Black Ops One", sans-serif;
   text-shadow: #fffb8e 1px 0 10px;
   color: #fffb8e;

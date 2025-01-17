@@ -15,12 +15,12 @@ text a {
 }
 
 .heading {
+  position: relative;
   margin: 0 auto;
   max-width: 70%;
   font-size: 50px;
   text-align: center;
-  padding: 100px;
-  z-index: 9;
+  padding: 100px
 }
 
 .heading .image {
@@ -38,11 +38,11 @@ body {
 }
 
 main {
+  position: relative;
   padding: 20px;
   max-width: 50%;
   margin: 0 auto;
   margin-bottom: 30px;
-  z-index: 5;
 }
 
 .footer {
@@ -173,7 +173,6 @@ a {
   box-sizing: border-box;
   background: linear-gradient(to bottom, #444444, #111111);
   margin: 0 auto;
-  z-index: 9;
 }
 
 .article .image {
@@ -289,6 +288,7 @@ a {
   box-shadow: 0 0 4px 2px rgba(#fff, 0.2);
   opacity: 0;
   animation: twinkle 5s infinite;
+  z-index: -1;
 }
 
 @keyframes twinkle {
